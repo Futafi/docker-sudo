@@ -1,0 +1,7 @@
+version: "3"
+services:
+  ubuntu:
+    build: .
+    image: "futafi/docker-sudo"
+    container_name: "docker-sudo"
+    user: "${UID}:${GID}"
